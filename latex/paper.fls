@@ -1,8 +1,8 @@
-PWD /Users/isabelkurth/Documents/Master/3.Semester/Ethics/Paper Isabel/latex
+PWD /Users/isabelkurth/Documents/Master/3.Semester/Ethics/values-in-ml-research/latex
 INPUT /usr/local/texlive/2023/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/isabelkurth/Documents/Master/3.Semester/Ethics/Paper Isabel/latex/paper.tex
+INPUT /Users/isabelkurth/Documents/Master/3.Semester/Ethics/values-in-ml-research/latex/paper.tex
 OUTPUT paper.log
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls

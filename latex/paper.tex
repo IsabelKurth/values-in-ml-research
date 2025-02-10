@@ -56,12 +56,20 @@ Unlike Birhane et al., who relied on manual annotation, we developed and deploye
 these keywords across the abstracts, introductions, and conclusions of the selected papers.
 The Table\ref{tab:keyword_table} in the Appendix provides a comprehensive list of the values and their associated keywords used in our analysis.
 For example we did not only query for the additonal keyword ``Novelty'' but also for ``novel'' as these two
-words express the same value and because we use a keyword search, sentences with the word ``novel'' would not be counted towards the keyword ``novelty''.  
+words express the same value and because we use a keyword search, sentences with the word ``novel'' would not be counted towards the keyword ``Novelty''.  
 For each keyword occurrence, contextual information was extracted to ensure accurate interpretation. 
-This semi-automated process balanced the scale of automated analysis with the depth of manual review.
+This semi-automated process balanced the scale of automated analysis with the depth of manual review. One major limitation to this keyword based approach is 
+that for some keywords this works better than for others and these keywords might then be under- or overrepresented in the analysis. For example for the keyword ``Fairness'' is 
+is really likeli that the keyword search will find the occurences if the paper adresses this topic because they will most liekli use the word in the context. 
+As a counter example the keyword `Èasy to implement'' might not be found as easily because the word ``easy'' is used in many other contexts as well and therefore we can not query for it.
+There are many different words in witch the researchers could express that their model is easy to implement and they are hard to capture all by a simple keyword search. In order to keep that limitations as simple as possible
+we try to query for many similar keywords and hope that this will cover most of the values.
+Even tough the keyword search is not perfect, it is a good way to get a first overview of the values encoded in the papers and to get a first impression of the values. To stay in the scope of this seminar paper 
+we therefor decided to use this approach but we want to explicitly mention this limitation.
 
 \subsection{Quantitative Summary}
-We measured the prevalence of each keyword in the dataset, calculating the relative frequency of each value.
+We measured the prevalence of each keyword in the dataset, calculating the relative frequency of each value. In Figure 1, we present the distribution of the values across all 200 papers from both conferences. The top values 
+are Performance, Quantitative evidence, Qualitative evidence and Generality. We specifically highlited the values that the Brihane et al. paper groups as ``User rights'' and ``Ethical Principles'' in the figure.
 
 \subsection{Qualitative Summary}
 Excerpts containing the keywords were manually reviewed to explore how values are framed and justified. Particular attention was given to the framing of societal impacts and ethical considerations, drawing comparisons with prior findings by Birhane et al.
@@ -88,6 +96,7 @@ Excerpts containing the keywords were manually reviewed to explore how values ar
 \appendix
 \section{Keyword Analysis Table}
 
+%%%%% muss geupdated werden 
 \begin{table}[h]
     \centering
     \begin{tabular}{|l|l|}
@@ -103,8 +112,8 @@ Excerpts containing the keywords were manually reviewed to explore how values ar
         Formal description/analysis & formal, mathematical \\
         Theoretical guarantees & guarantee \\
         Approximation & approximate \\
-        Quantitative evidence (e.g. experiments) & experiment \\
-        Qualitative evidence (e.g. examples) & example \\
+        Quantitative evidence (e.g. experiments) & quantitative \\
+        Qualitative evidence (e.g. examples) & qualitative \\
         Scientific methodology & scientific \\
         Controllability (of model owner) & control \\
         Human-like mechanism & human \\
@@ -139,7 +148,7 @@ Excerpts containing the keywords were manually reviewed to explore how values ar
         Privacy & privacy, private \\
         Fairness & fair \\
         Not socially biased & social bias, socially bias, social, society \\
-        User influence & user \\
+        User influence \\
         Collective influence & collective \\
         Deferral to humans & deferral \\
         Critiqability & criticism \\

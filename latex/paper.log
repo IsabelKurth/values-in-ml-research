@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.1)  29 JAN 2025 19:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.1)  10 FEB 2025 17:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/isabelkurth/Documents/Master/3.Semester/Ethics/Paper Isabel/latex/paper.tex"
-(/Users/isabelkurth/Documents/Master/3.Semester/Ethics/Paper Isabel/latex/paper.tex
+**/Users/isabelkurth/Documents/Master/3.Semester/Ethics/values-in-ml-research/latex/paper.tex
+(/Users/isabelkurth/Documents/Master/3.Semester/Ethics/values-in-ml-research/latex/paper.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -194,12 +194,12 @@ Overfull \hbox (16.80261pt too wide) in paragraph at lines 39--49
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2] (./paper.bbl)
-Overfull \hbox (116.30038pt too wide) in paragraph at lines 93--157
+Overfull \hbox (116.30038pt too wide) in paragraph at lines 102--166
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 184.14442pt on input line 159.
+LaTeX Warning: Float too large for page by 184.14442pt on input line 168.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -208,21 +208,21 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.163 \end{document}
+l.172 \end{document}
                     ] (./paper.aux)
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: 96110B4880D9A54349BB976554C937E4;984.
  ) 
 Here is how much of TeX's memory you used:
- 7405 strings out of 476025
- 118645 string characters out of 5790017
+ 7406 strings out of 476025
+ 118678 string characters out of 5790017
  1870388 words of memory out of 5000000
- 27786 multiletter control sequences out of 15000+600000
+ 27787 multiletter control sequences out of 15000+600000
  518508 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,76p,361b,431s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,76p,368b,431s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on paper.pdf (4 pages, 142514 bytes).
+Output written on paper.pdf (4 pages, 144134 bytes).
 PDF statistics:
  130 PDF objects out of 1000 (max. 8388607)
  99 compressed objects within 1 object stream
