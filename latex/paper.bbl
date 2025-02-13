@@ -1,8 +1,38 @@
 \begin{thebibliography}{1}
 
+\bibitem{berg2022fintech}
+Tobias Berg, Andreas Fuster, and Manju Puri.
+\newblock Fintech lending.
+\newblock {\em Annual Review of Financial Economics}, 14(1):187--207, 2022.
+
 \bibitem{valuesInML2021}
 Abeba Birhane, Pratyusha Kalluri, Dallas Card, William Agnew, Ravit Dotan, and Michelle Bao.
 \newblock The values encoded in machine learning research.
 \newblock {\em arXiv preprint arXiv:}, 2021.
+
+\bibitem{esteva2019guide}
+Andre Esteva, Alexandre Robicquet, Bharath Ramsundar, Volodymyr Kuleshov, Mark DePristo, Katherine Chou, Claire Cui, Greg Corrado, Sebastian Thrun, and Jeff Dean.
+\newblock A guide to deep learning in healthcare.
+\newblock {\em Nature medicine}, 25(1):24--29, 2019.
+
+\bibitem{floridi2022unified}
+Luciano Floridi and Josh Cowls.
+\newblock A unified framework of five principles for ai in society.
+\newblock {\em Machine learning and the city: Applications in architecture and urban design}, pages 535--545, 2022.
+
+\bibitem{geyik2019fairness}
+Sahin~Cem Geyik, Stuart Ambler, and Krishnaram Kenthapadi.
+\newblock Fairness-aware ranking in search \& recommendation systems with application to linkedin talent search.
+\newblock In {\em Proceedings of the 25th acm sigkdd international conference on knowledge discovery \& data mining}, pages 2221--2231, 2019.
+
+\bibitem{hawkins2021guidance}
+Richard Hawkins, Colin Paterson, Chiara Picardi, Yan Jia, Radu Calinescu, and Ibrahim Habli.
+\newblock Guidance on the assurance of machine learning in autonomous systems (amlas).
+\newblock {\em arXiv preprint arXiv:2102.01564}, 2021.
+
+\bibitem{kalluri2020don}
+Pratyusha Kalluri.
+\newblock Don’t ask if artificial intelligence is good or fair, ask how it shifts power.
+\newblock {\em Nature}, 583(7815):169--169, 2020.
 
 \end{thebibliography}
