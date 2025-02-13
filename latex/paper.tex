@@ -22,13 +22,21 @@
 % Abstract Section
 \begin{abstract}
 % \textbf{Keywords:} Machine Learning, Ethics, Values, Society, Impact
+Machine learning (ML) research drives technological progress across various domains, yet the values encoded in this research remain underexplored. Prior studies suggest that ML research overwhelmingly prioritizes 
+technical performance over ethical considerations, fairness, and broader societal impacts. Building upon the work of Birhane et al.\cite{valuesInML2021}, we analyze the value commitments in contemporary ML research by examining 
+the most influential papers from NeurIPS 2023 and ICML 2023. Using a keyword-based and qualitative analysis, we assess the prevalence of ethical and performance-driven values in these papers. Our findings reveal that while 
+performance, efficiency, and accuracy continue to dominate, there is an increasing—but still limited—acknowledgment of values related to user rights and ethical principles, particularly privacy and explicability. However, 
+fairness, transparency, and social responsibility remain secondary concerns. This study highlights the need for a more deliberate integration of ethical considerations into ML research and calls for alternative evaluation metrics 
+that balance technical advancements with social responsibility. By providing empirical insights into the values upheld in contemporary ML research, we contribute to the ongoing discourse on the socio-political dimensions of 
+AI development and encourage a reorientation towards more equitable and inclusive technological progress.
 \end{abstract}
 
 % Sections
 \section{Introduction}
 Machine learning (ML) research has become a driving force behind technological advancements across diverse domains, including healthcare \cite{esteva2019guide}, finance \cite{berg2022fintech}, and autonomous systems \cite{hawkins2021guidance}. 
 However, despite its transformative potential, the values embedded in ML research remain underexamined, 
-raising critical questions about whom the field serves and whose needs it prioritizes. The previous study by Birhane et al. \cite{valuesInML2021} has demonstrated that ML research overwhelmingly prioritizes 
+raising critical questions about whom the field serves and whose needs it prioritizes. Therefore it is cirital to analyse the values encoded in ML research. Brey states that technology is not neutral but has embedded values \cite{brey2010values}. 
+The previous study by Birhane et al. \cite{valuesInML2021} has demonstrated that ML research overwhelmingly prioritizes 
 performance, generalization, and novelty while often neglecting ethical considerations, fairness, and broader societal impacts.
 
 In this work, we build upon the foundational analysis by Birhane et al., extending the study to the most influential papers from NeurIPS 2023 and ICML 2023. 
@@ -75,6 +83,7 @@ we try to query for many similar keywords and hope that this will cover most of 
 Even tough the keyword search is not perfect, it is a good way to get a first overview of the values encoded in the papers and to get a first impression of the values. To stay in the scope of this seminar paper 
 we therefor decided to use this approach but we want to explicitly mention this limitation.
 
+\section{Results}
 \subsection{Quantitative Summary}
 We measure the prevelence of each keyword in the 100 papers from the ICML 2023 conference and the 100 papers from the NeurIPS 2023 conference. First we investigate the combined distribution of the keywords in both conferences, second we look at both conferences seperately,
 and lastly we compare the results from the 2023 papers with the results from the 2008/09 and 2018/19 papers from Birhane et al. \cite{valuesInML2021}. 
@@ -192,6 +201,10 @@ social impact.
 The keyword-based methodology we employed, while effective for large-scale analysis, introduces limitations regarding contextual accuracy. Automated searches for ethical principles may fail to capture nuanced discussions, 
 as seen in cases where references to fairness or accountability appeared only in citations rather than substantive discourse. This underscores the need for complementary qualitative analysis to provide deeper insights into 
 the way these values are operationalized in ML research.
+
+We choose the papers we include in our analysis based on the impact score provided by Paper Digest. This score is based on a combination of paper citations, patent citations, etc. What needs to be mentioned here is that
+citations always have a time delay and it is hard to determine just shortly after a conference witch papers will have the greatest influence in the future. By including 100 papers per conference, we aim to 
+capture the most influencial once but it is possible that some papers that will have a great impact in the future are not included in our analysis. Also citations only might not be a sufficient criteria for the influence of a paper. 
 
 \section{Conclusion}
 Our analysis reveals that while ML research is increasingly acknowledging ethical concerns such as privacy and explicability, technical performance metrics continue to dominate. 
