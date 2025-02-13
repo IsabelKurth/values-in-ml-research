@@ -1,19 +1,19 @@
 # Fdb version 4
-["bibtex paper"] 1739440022 "paper.aux" "paper.bbl" "paper" 1739440025 0
+["bibtex paper"] 1739470161 "paper.aux" "paper.bbl" "paper" 1739470464 0
   "./references.bib" 1739439929 2458 eedcfd266f2417eea157dedc0dacdd76 ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "paper.aux" 1739440024 5537 9756c2a237d762da5cc96424564e5335 "pdflatex"
+  "paper.aux" 1739470463 5669 96c7a4953320eb88122789d255c28216 "pdflatex"
   (generated)
   "paper.bbl"
   "paper.blg"
   (rewritten before read)
-["pdflatex"] 1739440023 "/Users/isabelkurth/Documents/Master/3.Semester/Ethics/values-in-ml-research/latex/paper.tex" "paper.pdf" "paper" 1739440025 0
-  "../plots/histogram_keyword_counts_total_number.png" 1739436321 260730 05a971aafffdcda0e181f8a46487e260 ""
-  "../plots/percentage_both_conferences.png" 1739435571 256621 e6e13df3546aafa8407c42ef439bfdfa ""
-  "../plots/percentage_comparison_brihane.png" 1739435910 231896 265bb999ca635249c9282d1681b4c32a ""
-  "../plots/percentage_comparison_conferences.png" 1739435707 267949 6887ada7ce3fc698de3d0f929548801c ""
-  "../plots/subset_percentage_comparison.png" 1739436417 60535 f774f843a076f7c82e60d234de69bbd3 ""
-  "/Users/isabelkurth/Documents/Master/3.Semester/Ethics/values-in-ml-research/latex/paper.tex" 1739440020 26197 a63fdc99601f0cb0f451a3e7250346c7 ""
+["pdflatex"] 1739470457 "/Users/isabelkurth/Documents/Master/3.Semester/Ethics/values-in-ml-research/latex/paper.tex" "paper.pdf" "paper" 1739470464 0
+  "../plots/histogram_keyword_counts_total_number.png" 1739469836 1000004 b275d3c68679ee3556bd8098caf8e101 ""
+  "../plots/percentage_both_conferences.png" 1739469680 1005956 4e066b1c587fd0183906fcbae9eaa279 ""
+  "../plots/percentage_comparison_brihane.png" 1739469786 877165 d7d5b50d57ea0a9fff3e5080d3b422b4 ""
+  "../plots/percentage_comparison_conferences.png" 1739469703 1013502 8c97d1a29f52bfdb69bcc71ce14519e6 ""
+  "../plots/subset_percentage_comparison.png" 1739469823 227419 63ca511c615332cee152c29d644b3403 ""
+  "/Users/isabelkurth/Documents/Master/3.Semester/Ethics/values-in-ml-research/latex/paper.tex" 1739470457 26864 24478e4af925fdc2200a64bc94475ed1 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -41,6 +41,8 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1248133631 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
@@ -98,10 +100,10 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1701445502 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1701445460 7883458 bf992ebf7452da56811e94ef9f52a6c5 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "paper.aux" 1739440024 5537 9756c2a237d762da5cc96424564e5335 "pdflatex"
-  "paper.bbl" 1739440023 1975 0a93410285e4dd162c8c180eb3710c69 "bibtex paper"
-  "paper.out" 1739440024 1704 8a6be06bf6579b7908358d7cd297d0b2 "pdflatex"
-  "paper.tex" 1739440020 26197 a63fdc99601f0cb0f451a3e7250346c7 ""
+  "paper.aux" 1739470463 5669 96c7a4953320eb88122789d255c28216 "pdflatex"
+  "paper.bbl" 1739470161 1975 0a93410285e4dd162c8c180eb3710c69 "bibtex paper"
+  "paper.out" 1739470463 1704 8a6be06bf6579b7908358d7cd297d0b2 "pdflatex"
+  "paper.tex" 1739470457 26864 24478e4af925fdc2200a64bc94475ed1 ""
   (generated)
   "paper.aux"
   "paper.log"

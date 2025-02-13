@@ -22,7 +22,7 @@
 % Abstract Section
 \begin{abstract}
 % \textbf{Keywords:} Machine Learning, Ethics, Values, Society, Impact
-Machine learning (ML) research drives technological progress across various domains, yet the values encoded in this research remain underexplored. Prior studies suggest that ML research overwhelmingly prioritizes 
+Machine learning (ML) research drives technological progress across various domains, yet the ethical values encoded in this research remain underexplored. Prior studies suggest that ML research overwhelmingly prioritizes 
 technical performance over ethical considerations, fairness, and broader societal impacts. Building upon the work of Birhane et al.\cite{valuesInML2021}, we analyze the value commitments in contemporary ML research by examining 
 the most influential papers from NeurIPS 2023 and ICML 2023. Using a keyword-based and qualitative analysis, we assess the prevalence of ethical and performance-driven values in these papers. Our findings reveal that while 
 performance, efficiency, and accuracy continue to dominate, there is an increasing—but still limited—acknowledgment of values related to user rights and ethical principles, particularly privacy and explicability. However, 
@@ -34,31 +34,33 @@ AI development and encourage a reorientation towards more equitable and inclusiv
 % Sections
 \section{Introduction}
 Machine learning (ML) research has become a driving force behind technological advancements across diverse domains, including healthcare \cite{esteva2019guide}, finance \cite{berg2022fintech}, and autonomous systems \cite{hawkins2021guidance}. 
-However, despite its transformative potential, the values embedded in ML research remain underexamined, 
-raising critical questions about whom the field serves and whose needs it prioritizes. Therefore it is cirital to analyse the values encoded in ML research. Brey states that technology is not neutral but has embedded values \cite{brey2010values}. 
-The previous study by Birhane et al. \cite{valuesInML2021} has demonstrated that ML research overwhelmingly prioritizes 
-performance, generalization, and novelty while often neglecting ethical considerations, fairness, and broader societal impacts.
+While these advancements have the potential to reshape industries and society at large, the values underpinning ML research remain insufficiently examined. This raises crucial questions about whose interests the field serves and what priorities it implicitly endorses.
+As Brey (2010) argues, technology is never value-neutral; instead, it embodies the social, economic, and political values of its creators and institutional contexts \cite{brey2010values}. This perspective is particularly relevant for ML, 
+where research priorities are often shaped by objectives such as performance optimization, scalability, and generalization—often at the expense of ethical considerations. Birhane et al. (2021) provide empirical evidence supporting this 
+claim, demonstrating that ML research overwhelmingly emphasizes technical advancements while paying comparatively little attention to fairness, accountability, and broader societal implications \cite{valuesInML2021}.
 
-In this work, we build upon the foundational analysis by Birhane et al., extending the study to the most influential papers from NeurIPS 2023 and ICML 2023. 
-These conferences represent the cutting edge of ML research and serve as key venues where emerging trends and priorities become crystallized. By systematically analyzing these highly-cited papers, 
-we aim to uncover the prevailing value commitments in ML research and assess whether the field has shifted its focus towards more socially responsible AI.
+Building on this foundation, our study extends the analysis of value commitments in ML research by examining the most influential papers from NeurIPS 2023 and ICML 2023. These premier conferences shape the trajectory of the field by highlighting emerging trends 
+and research priorities. By systematically analyzing these high-impact papers, we aim to assess whether the ML community has shifted towards a more socially responsible approach or continues to prioritize technical innovation over 
+ethical concerns.
 
-Our methodology involves a keyword-based analysis, complemented by qualitative reviews, to measure the prevalence of ethical and performance-driven values in recent ML research. While previous studies \cite{geyik2019fairness} 
-have emphasized the need for fairness-aware ML, our findings indicate that technical considerations such as state-of-the-art (SOTA) performance and computational
-efficiency continue to dominate, often at the expense of user rights and transparency.
-This study contributes to the growing discourse on the socio-political dimensions of ML research by providing empirical insights into the values upheld in contemporary work. By situating our findings within 
-the broader ML ethics literature, we aim to encourage researchers, institutions, and policymakers to critically reflect on the long-term implications of prioritizing 
-certain values over others. Our analysis reveals a pressing need to reorient ML research towards more equitable and inclusive technological development, aligning with calls for ethical AI \cite{floridi2022unified}, \cite{kalluri2020don}
+Our methodology employs a combination of keyword-based quantitative analysis and qualitative review to assess the prominence of ethical values in recent ML research. While prior studies \cite{geyik2019fairness} have emphasized the 
+importance of fairness-aware ML, our findings suggest that performance metrics—such as state-of-the-art (SOTA) accuracy and computational efficiency—continue to dominate the discourse, often sidelining considerations of transparency, 
+user rights, and broader social impact.
+
+By situating our findings within the broader discourse on ML ethics, this study contributes empirical insights into the implicit value structures that shape contemporary ML research. In doing so, we seek to encourage 
+researchers, institutions, and policymakers to critically reflect on the long-term implications of these value hierarchies and to foster a more equitable and ethically grounded approach to AI development. Our analysis underscores 
+the pressing need to reorient ML research toward more inclusive and socially responsible technological progress, aligning with calls for ethical AI \cite{floridi2022unified}, \cite{kalluri2020don}.
 
 \section{Methodology}
 \subsection{Data collection}
-We curated a dataset of the 100 most influential papers from NeurIPS 2023 and ICML 2023 using rankings provided by Paper Digest 
-(\url{https://www.paperdigest.org/topic/?topic=nips&year=2023} and \url{https://www.paperdigest.org/topic/?topic=icml&year=2023}). 
+We curated a dataset of the 100 most influential papers from NeurIPS 2023 and ICML 2023 each using rankings provided by Paper Digest 
+\footnote{\url{https://www.paperdigest.org/topic/?topic=nips&year=2023} and \url{https://www.paperdigest.org/topic/?topic=icml&year=2023}}. 
 These rankings were based on an impact score, which reflects a combination of paper citations, patent citations, etc. It is a score in 1.0-10.0, 
-with a higher value indicating a broader impact. We then downloaded the respective papers from the conference website directly 
-(\url{https://proceedings.neurips.cc/paper_files/paper/2023} and \url{https://icml.cc/Downloads/2023}). 
-The selected papers represent the cutting edge of machine 
-learning research and provide a representative sample of current trends and values in the field. We did not use Semantic Scholar as in the Birhane et 
+with a higher value indicating a broader impact. We then downloaded the respective paper from the conference website directly 
+\footnote{\url{https://proceedings.neurips.cc/paper_files/paper/2023} and \url{https://icml.cc/Downloads/2023}}. 
+We choose to select these specific papers with the goal to represent the cutting edge of machine 
+learning research and provide a representative sample of current trends and values in the field. It is discussable if citation counts are the best strategy to determine the influencial papers (see Section \ref{sec:discussion}). 
+We did not use Semantic Scholar as in the Birhane et 
 al. (2023) paper because Semantic Scholar did not provide API keys due to high demand. We could also not use Google Scholar to access the citation 
 counts because the IP address gets blocked after too many access tries. A list of the PDFs of the 100 papers of both conferences can be found in the 
 GitHub repository: \url{https://github.com/IsabelKurth/values-in-ml-research}.
@@ -72,20 +74,20 @@ Unlike Birhane et al., who relied on manual annotation, we developed and deploye
 these keywords across the abstracts, introductions, and conclusions of the selected papers.
 The Table\ref{tab:keyword_table} in the Appendix provides a comprehensive list of the values and their associated keywords used in our analysis.
 For example we did not only query for the additonal keyword ``Novelty'' but also for ``novel'' as these two
-words express the same value and because we use a keyword search, sentences with the word ``novel'' would not be counted towards the keyword ``Novelty''.  
-For each keyword occurrence, contextual information was extracted to ensure accurate interpretation. 
+words express the same value. 
+For each keyword occurrence, contextual information (the sentences with the keyword occurence) were extracted to ensure accurate interpretation. 
 This semi-automated process balanced the scale of automated analysis with the depth of manual review. One major limitation to this keyword based approach is 
-that for some keywords this works better than for others and these keywords might then be under- or overrepresented in the analysis. For example for the keyword ``Fairness'' is 
-is really likeli that the keyword search will find the occurences if the paper adresses this topic because they will most liekli use the word in the context. 
-As a counter example the keyword `Èasy to implement'' might not be found as easily because the word ``easy'' is used in many other contexts as well and therefore we can not query for it.
-There are many different words in witch the researchers could express that their model is easy to implement and they are hard to capture all by a simple keyword search. In order to keep that limitations as simple as possible
-we try to query for many similar keywords and hope that this will cover most of the values.
+that for some keywords this works better than for others and these keywords might then be under- or overrepresented in the analysis. For example for the keyword ``Fairness'' is really likely that the 
+keyword search will find the occurences if the paper adresses this topic because they will most liekly use the word in the context. 
+As a counter example the keyword `Easy to implement'' might not be found as easily because the word ``easy'' is used in many other contexts as well and therefore we decided not to query for it in order to avoid that sentences are flagged with 
+the value that do not contain it.
+There are many different words in which the researchers could express that their model is easy to implement and they are hard to capture all by a simple keyword search.
 Even tough the keyword search is not perfect, it is a good way to get a first overview of the values encoded in the papers and to get a first impression of the values. To stay in the scope of this seminar paper 
-we therefor decided to use this approach but we want to explicitly mention this limitation.
+we therefore decided to use this approach but we want to explicitly mention this limitation.
 
 \section{Results}
 \subsection{Quantitative Summary}
-We measure the prevelence of each keyword in the 100 papers from the ICML 2023 conference and the 100 papers from the NeurIPS 2023 conference. First we investigate the combined distribution of the keywords in both conferences, second we look at both conferences seperately,
+We measure the prevelence (keyword present in a paper at least once) of each keyword in the 100 papers from the ICML 2023 conference and the 100 papers from the NeurIPS 2023 conference. First we investigate the combined distribution of the keywords in both conferences, second we look at both conferences seperately,
 and lastly we compare the results from the 2023 papers with the results from the 2008/09 and 2018/19 papers from Birhane et al. \cite{valuesInML2021}. 
 In line with the Birhane et al. paper we highlight the values that fall under `User rights'. These are `Interpretable (To Users)', `Deferral To Humans', `Privacy', `User influence', `Not Socially Biased' and `Fairness'. 
 These values are highlighted in all plots in orange. The second group of values highlighted are values belonging to `Ethical Principles', These keywords are `Beneficence', `Non-Maleficence', `Respect for Law and Public Interest', 
@@ -104,9 +106,9 @@ ethical principles the most common ones are `Explicability' (22.5\%) and Privacy
 \end{figure}
 
 By analysing the 100 most influencial paper from both conferences seperately we can see in Figure \ref{fig:percentage_comparison_conferences}
-that the distribution of values are quite similar in both conferences. The top values in both conferences are performance, accuracy, understanding (for researchers), efficiency and fast.
-that the maximum length for a paper is nine pages for Neurips (\url{https://neurips.cc/Conferences/2023/PaperInformation/NeurIPS-FAQ}) and only eight pages for ICML (\url{https://icml.cc/Conferences/2023/StyleAuthorInstructions}). If the paper
-are shorter the possibility of including values drops due to the space limitation. 
+that the distribution of values are quite similar in both conferences. The values performance and accuracy are among the top 5 values for both conferences. 
+One can consider that the maximum length for a paper is nine pages for Neurips\footnote{\url{https://neurips.cc/Conferences/2023/PaperInformation/NeurIPS-FAQ}} and only eight pages for ICML\footnote{\url{https://icml.cc/Conferences/2023/StyleAuthorInstructions}}.
+This different limitation in the maximum length of the paper does not seem to have a big impact on the distribution of values in the paper.
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{../plots/percentage_comparison_conferences.png}
@@ -115,8 +117,8 @@ are shorter the possibility of including values drops due to the space limitatio
 \end{figure}
 
 
-These plots always show the percentage of papers that contain the specific value. In order to take into account if one value is detected multiple times in a paper. We can see in Figure \ref{fig:total_counts }the total counts of the values in the papers
-for both conferences. This emphasises that Performance is by far the most addressed value in the papers. 
+These plots always show the percentage of papers that contain the specific value. In order to take into account if one value is detected multiple times in a paper. We can see in Figure \ref{fig:total_counts} the total counts of the values in the papers
+for both conferences. This emphasises that `Performance' is by far the most addressed value in the papers. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{../plots/histogram_keyword_counts_total_number.png}
@@ -137,9 +139,9 @@ These are performance (2023: 99\% and Brihane: 96\%), generalisation(77\% and 89
 Strong differences as in values such as `Automatic' and `Progress' can potentially be explaind due to the fact that these 
 words occur often also without specific meaning towards the values. 
 
-By looking closer at the values related to user rights and ethical principles in Figure \ref{fig:subset_comparison_years}
-we can see an increase in the percentage of papers with these values from 2008/09 and 2018/19 to 2023 expect for `Deferral to humans' and `User influence'. Here the 
-decrease is so small that it could also be due to the keyword search. Especially in the values `Privacy' and `Explicability' we see and strong increase. 
+Zooming onto the values related to user rights and ethical principles in Figure \ref{fig:subset_comparison_years}
+we can see an increase in the percentage of papers with these values from 2008/09 and 2018/19 to 2023 except for `Deferral to humans' and `User influence'. For the latter the 
+decrease is so small that it could also be due to the keyword search. Especially in the values `Privacy' and `Explicability' we see a strong increase. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth,height=0.32\textheight]{../plots/subset_percentage_comparison.png}
@@ -168,8 +170,9 @@ examples show that by the automated keywords search in this case sentences get f
 \end{table}
 
 For the values `Fairness' we can see in Table \ref{tab:qualitative_examples_fairness} that the keyword search was able to capture the values correctly in the first two example sentences.
-In the last case the automated search did wrongly also flag a reference cited in the paper that was publsiehd at the ACM COnference on Fairness, Accountability, and Transparency. 
-In this case the value fairness was not part of the paper but it got flagged. This shows a limitation of the automated appraoch. 
+In the last case the automated search also flaged a reference cited in the paper that was published at the ACM Conference on Fairness, Accountability, and Transparency. 
+In this case the value `Fairness' was not part of the paper but it got flagged. This shows a limitation of the automated approach. One could argue that citing a paper that deals with fairness
+also coud be counted as a value in the paper.  
 
 
 \begin{table}[H]
@@ -191,6 +194,7 @@ We provide in the code the possibility to search for the values the reader is mo
 as output the names of the paper and the sentences that got flagged. 
 
 \section{Discussion}
+\label{sec:discussion}
 Our study extends the analysis of values encoded in machine learning (ML) research by examining the most influential papers from NeurIPS 2023 and ICML 2023. In alignment with prior work by Birhane et al. (2023), 
 we find that performance, accuracy, generalization, and efficiency remain dominant values in contemporary ML research. However, our findings also suggest an increasing emphasis on ethical considerations, particularly 
 explicability and privacy, indicating a growing awareness of the societal implications of ML advancements.
@@ -202,9 +206,9 @@ The keyword-based methodology we employed, while effective for large-scale analy
 as seen in cases where references to fairness or accountability appeared only in citations rather than substantive discourse. This underscores the need for complementary qualitative analysis to provide deeper insights into 
 the way these values are operationalized in ML research.
 
-We choose the papers we include in our analysis based on the impact score provided by Paper Digest. This score is based on a combination of paper citations, patent citations, etc. What needs to be mentioned here is that
+We choose the papers we include in our analysis based on the impact score provided by Paper Digest. This score is based on a combination of paper citations, patent citations, etc. It should be mentionedis that
 citations always have a time delay and it is hard to determine just shortly after a conference witch papers will have the greatest influence in the future. By including 100 papers per conference, we aim to 
-capture the most influencial once but it is possible that some papers that will have a great impact in the future are not included in our analysis. Also citations only might not be a sufficient criteria for the influence of a paper. 
+capture the most influencial once but it is possible that some papers that will have a great impact in the future are not included in our analysis. Also citations by themselfs might not be a sufficient criterion for the future influence of a paper. 
 
 \section{Conclusion}
 Our analysis reveals that while ML research is increasingly acknowledging ethical concerns such as privacy and explicability, technical performance metrics continue to dominate. 
@@ -319,6 +323,7 @@ research will be essential for fostering responsible and equitable AI developmen
     Realistic world model & world model, real-world applicability, realistic simulation, grounded AI, embodied intelligence \\ 
     Fast & speed, low latency, real-time \\ 
     \hline
+    \label{tab:keyword_table}
 \end{longtable}
 
 \end{document}
