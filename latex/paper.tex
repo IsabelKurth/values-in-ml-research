@@ -71,7 +71,8 @@ they write that they use 67 values, but in their annotation template for manual 
 just mention 62 values. In order to search for as many values as possible we decided to proceed with the 74 values from the annotation file in their data folder.  
 These keywords include terms related to performance, generalization, novelty, societal impact, and ethical considerations. 
 Unlike Birhane et al., who relied on manual annotation, we developed and deployed an automated keyword-scanning algorithm to systematically identify the presence of 
-these keywords across the abstracts, introductions, and conclusions of the selected papers.
+these keywords. Brihane et al. did only analyse the sections abstract, introduction, discussion and conclusion of the selected papers. We assume that they focused on these parts of the papers because they are most likely to contain the values and to minimize the workload for the manual annotations. Because we used an automated approach we decided to scan the whole paper (excluding the References section). We exclude this section because otherwise here references get flagged with the value `Fairness' for example with they were pubslished at the ACM Conference on Fairness, Accountability, and Transparency. This would result in a false positive.
+
 The Table\ref{tab:keyword_table} in the Appendix provides a comprehensive list of the values and their associated keywords used in our analysis.
 For example we did not only query for the additonal keyword ``Novelty'' but also for ``novel'' as these two
 words express the same value. 
@@ -92,10 +93,11 @@ and lastly we compare the results from the 2023 papers with the results from the
 In line with the Birhane et al. paper we highlight the values that fall under `User rights'. These are `Interpretable (To Users)', `Deferral To Humans', `Privacy', `User influence', `Not Socially Biased' and `Fairness'. 
 These values are highlighted in all plots in orange. The second group of values highlighted are values belonging to `Ethical Principles', These keywords are `Beneficence', `Non-Maleficence', `Respect for Law and Public Interest', 
 `Respect for Persons', `Autonomy (Power to Decide)', `Explicability' and `Justice'.
+
 \subsubsection{ICML and Neurips 2023}
-In Figure \ref{fig:percentage_both_conferences} we show the prevelance of values in all 200 papers combined from ICML and Neurips 2023. The top values are performance (99\%), accuracy (85\%), 
-Understanding (for researchers) (82.5\%), Efficiency (81\%) and Fast (80\%). Among the values related to user rights and stated in 
-ethical principles the most common ones are `Explicability' (22.5\%) and Privacy (21.5\%). 
+In Figure \ref{fig:percentage_both_conferences} we show the prevelance of values in all 200 papers combined from ICML and Neurips 2023. The top values are performance (97.5\%), accuracy (75\%), 
+State-of-the-art (71\%), Efficiency (70\%) and Improvement (67.5\%). Among the values related to user rights and stated in 
+ethical principles the most common ones are Privacy (16.5\%) and `Explicability' (15.5\%). 
 
 \begin{figure}[H]
     \centering
@@ -106,7 +108,7 @@ ethical principles the most common ones are `Explicability' (22.5\%) and Privacy
 \end{figure}
 
 By analysing the 100 most influencial paper from both conferences seperately we can see in Figure \ref{fig:percentage_comparison_conferences}
-that the distribution of values are quite similar in both conferences. The values performance and accuracy are among the top 5 values for both conferences. 
+that the distribution of values are quite similar in both conferences. The values `Performance', `Accuracy' and `State-of-the-art' are among the top 5 values for both conferences. 
 One can consider that the maximum length for a paper is nine pages for Neurips\footnote{\url{https://neurips.cc/Conferences/2023/PaperInformation/NeurIPS-FAQ}} and only eight pages for ICML\footnote{\url{https://icml.cc/Conferences/2023/StyleAuthorInstructions}}.
 This different limitation in the maximum length of the paper does not seem to have a big impact on the distribution of values in the paper.
 \begin{figure}[H]
@@ -129,7 +131,7 @@ for both conferences. This emphasises that `Performance' is by far the most addr
 \subsubsection{Comparison 2008/09 and 2018/19 to 2023}
 In Figure \ref{fig:percentage_comparison_years} we compare the distribution of values in the 200 most influential papers from ICML 2023 and NeurIPS 2023 with the results from Birhane et al.
 There are a few values that have a high percentage in both the 2023 papers and the papers from 2008/09 and 2018/19. 
-These are performance (2023: 99\% and Brihane: 96\%), generalisation(77\% and 89\%) and efficiency (81\% and 84\%). 
+These are `Performance' (2023: 97.5\% and Brihane: 96\%), `Generalisation' (65.5\% and 89\%) and `Efficiency' (70\% and 84\%). 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{../plots/percentage_comparison_brihane.png}
@@ -140,8 +142,7 @@ Strong differences as in values such as `Automatic' and `Progress' can potential
 words occur often also without specific meaning towards the values. 
 
 Zooming onto the values related to user rights and ethical principles in Figure \ref{fig:subset_comparison_years}
-we can see an increase in the percentage of papers with these values from 2008/09 and 2018/19 to 2023 except for `Deferral to humans' and `User influence'. For the latter the 
-decrease is so small that it could also be due to the keyword search. Especially in the values `Privacy' and `Explicability' we see a strong increase. 
+we can see an increase in the percentage of papers with these values from 2008/09 and 2018/19 to 2023 except for `Interpretable (to users)' (minor decrease), `Beneficence' (strong decrease), `Deferral to humans' (low decrease) and `User influence' (minor decrease). For the values expect `Beneficence' the decrease is so small that it could be due to the keyword search. The decrease for `Beneficence' is really strong from 13\% to only 1.5\%. One possible explanation is that it is hard to query by a keyword search for this value. Especially in the values `Privacy' (from 3\% to 16.5\%), `Explicability' (from 2\% to 15.5\%) and `Fairness' (from 1\% to 10\%) we see a strong increase. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth,height=0.32\textheight]{../plots/subset_percentage_comparison.png}
@@ -160,7 +161,7 @@ examples show that by the automated keywords search in this case sentences get f
         \toprule
         ``However, in contrast to existing works that target a specific application, without a well defined objective, we propose a more general approach that allows us to unify different user control inputs in a more principled manner.'' \\
         \midrule
-        ``Controllable Diffusion Models are designed to enable T2I diffusion models to accept more user controls for guiding the generation results.'' \\
+        ``However, user controllability of the generated image, and fast adaptation to new tasks still remains an open challenge, currently mostly addressed by costly and long retraining and fine-tuning or ad-hoc adaptations to specific image generation tasks.'' \\
         \midrule
         ``Recently, a surge of methods have been proposed to gain wider and better user controllability.'' \\
         \bottomrule
@@ -169,10 +170,11 @@ examples show that by the automated keywords search in this case sentences get f
     \label{tab:qualitative_examples_user_influence}
 \end{table}
 
-For the values `Fairness' we can see in Table \ref{tab:qualitative_examples_fairness} that the keyword search was able to capture the values correctly in the first two example sentences.
-In the last case the automated search also flaged a reference cited in the paper that was published at the ACM Conference on Fairness, Accountability, and Transparency. 
-In this case the value `Fairness' was not part of the paper but it got flagged. This shows a limitation of the automated approach. One could argue that citing a paper that deals with fairness
-also coud be counted as a value in the paper.  
+For the values `Fairness' we can see in Table \ref{tab:qualitative_examples_fairness} that the keyword search was able to capture the values correctly 
+in the first two example sentences.In the last case the automated search also flaged a reference cited in the paper that was published at the 
+ACM Conference on Fairness, Accountability, and Transparency. Here the References section was wrongly inclded in the search for this paper, because
+the automatic exclusion of this section does not work perfectly. In this case the value `Fairness' was not part of the paper but it got flagged. 
+This shows a limitation of the automated approach. One could argue that citing a paper that deals with fairnessalso coud be counted as a value in the paper.  
 
 
 \begin{table}[H]
@@ -183,7 +185,7 @@ also coud be counted as a value in the paper.
         \midrule
         ``It is unclear whether other properties that have been extensively studied in the literature for the existing public BERT checkpoint, such as robustness, out-of-distribution generalization, fairness or inherent biases, carry over to the crammed model.'' \\
         \midrule
-        ``In 2022 ACM Confer- ence on Fairness, Accountability, and Transparency , pp.'' \\
+        ``In 2022 ACM Conference on Fairness, Accountability, and Transparency , pp.'' \\
         \bottomrule
     \end{tabular}
     \caption{Random examples of the value \textit{Fairness} in the context.}
@@ -196,8 +198,8 @@ as output the names of the paper and the sentences that got flagged.
 \section{Discussion}
 \label{sec:discussion}
 Our study extends the analysis of values encoded in machine learning (ML) research by examining the most influential papers from NeurIPS 2023 and ICML 2023. In alignment with prior work by Birhane et al. (2023), 
-we find that performance, accuracy, generalization, and efficiency remain dominant values in contemporary ML research. However, our findings also suggest an increasing emphasis on ethical considerations, particularly 
-explicability and privacy, indicating a growing awareness of the societal implications of ML advancements.
+we find that performance, accuracy, state-of-the-art, and efficiency remain dominant values in contemporary ML research. However, our findings also suggest an increasing emphasis on ethical considerations, particularly 
+explicability, privacy, and fairness indicating a growing awareness of the societal implications of ML advancements.
 A key observation in our study is that the priorities of ML research largely remain entrenched in technical performance metrics. The emphasis on state-of-the-art (SOTA) performance and efficiency continues to drive the field, 
 yet the explicit inclusion of values related to fairness, transparency, and social responsibility remains relatively limited. While there is a slight increase in the prevalence of values associated with user rights, such as 
 privacy and explicability, these considerations are still secondary to performance-driven objectives. This reinforces concerns raised by Birhane et al. (2023) that ML research prioritizes technical achievements over broader 
@@ -213,11 +215,10 @@ capture the most influencial once but it is possible that some papers that will 
 \section{Conclusion}
 Our analysis reveals that while ML research is increasingly acknowledging ethical concerns such as privacy and explicability, technical performance metrics continue to dominate. 
 The persistence of values such as performance, efficiency, and generalization, while important for technological progress, indicates that broader social considerations remain underprioritized. 
-Despite the growing discourse around fairness, transparency, and ethical AI, these values are not yet as deeply embedded in ML research as one might hope.
+Despite the growing discourse around fairness, transparency, and ethical AI, these values are not yet as deeply embedded in ML research as one might hope. 
+This study underscores the need for a more deliberate integration of ethical principles into ML research.
 
-This study underscores the need for a more deliberate integration of ethical principles into ML research. Future work should explore alternative evaluation metrics that balance technical performance 
-with social responsibility. Moreover, institutions and funding bodies should incentivize research that explicitly addresses societal needs, ensuring that ML advancements contribute to equitable and 
-inclusive technological progress.
+This paper analyses papers from the two big ML conferences ICML and Neurips. There are specialized ML conferences dedicated to the study of fairness, accountability and transparency in AI. It can be debated whether the fact that these specialized conferences exist ensures that a focus on performance values at ICML and Neurips seems justifiable. 
 
 Finally, our findings highlight the importance of methodological rigor in value analysis. While keyword-based approaches provide valuable quantitative insights, they must be supplemented with 
 qualitative evaluations to accurately capture the nuances of how values are expressed in ML research. As ML continues to shape critical aspects of society, ongoing scrutiny of the values encoded in its 
@@ -264,14 +265,14 @@ research will be essential for fostering responsible and equitable AI developmen
     Human-like mechanism & biologically inspired, cognitive \\ 
     Low cost & cheap, cost, affordable, resource-efficient, budget-friendly \\ 
     Large scale & scalability, big data, high-capacity, massive-scale \\ 
-    Promising & \\ 
+    Promising & - \\ 
     Generality & broad applicability, domain-independent, versatile \\ 
     Principled & theoretically sound, axiomatic, methodologically rigorous \\ 
     Exactness & error-free \\ 
     Preciseness & high-fidelity \\ 
     Concreteness & grounded, verifiable \\ 
     Automatic & self-operating, hands-free \\ 
-    Performance & \\ 
+    Performance & - \\ 
     Accuracy & precision, recall, F1-score, error rate, reliability \\ 
     Avoiding train/test discrepancy & train/test, discrepancy, distribution shift, generalization gap \\ 
     State-of-the-art & SOTA, best performing, cutting-edge, latest \\ 
@@ -281,16 +282,16 @@ research will be essential for fostering responsible and equitable AI developmen
     Data efficiency & data-efficient, few-shot, self-supervised, low data regime \\ 
     Label efficiency & label-efficient, semi-supervised, weak supervision \\ 
     Energy efficiency & energy-efficient, low power, green AI, sustainable AI \\ 
-    Effectiveness & \\ 
-    Successful & \\ 
+    Effectiveness & - \\ 
+    Successful & - \\ 
     Building on classic work & classic work, foundational, historical perspective \\ 
     Building on recent work & recent work, latest advancements, current research \\ 
     Unifying ideas & unifying, integrative, synergistic, compositional \\ 
     Identifying limitations & limitations, weaknesses, failure modes \\ 
     Critique & criticism, critical review \\ 
     Understanding (for researchers) & understanding, conceptual clarity \\ 
-    Improvement & \\ 
-    Progress & \\ 
+    Improvement & - \\ 
+    Progress & - \\ 
     Used in practice & used in practice, popular, adopted, real-world usage \\ 
     Reproducibility & reproduce, replication, repeatability, consistent results \\ 
     Easy to implement & simple to use, straightforward \\ 
@@ -301,7 +302,7 @@ research will be essential for fostering responsible and equitable AI developmen
     Applies to real world & real world, practical application, real-world relevance \\ 
     Learning from humans & human learning, human-in-the-loop, interactive learning \\ 
     Practical & applied AI \\ 
-    Useful & \\ 
+    Useful & - \\ 
     Interpretable (to users) & interpretable, explainable \\ 
     Transparent (to users) & transparent, transparency, accountability \\ 
     Privacy & privacy, private, confidentiality, data protection \\ 
@@ -311,7 +312,7 @@ research will be essential for fostering responsible and equitable AI developmen
     Collective influence & collective, group influence, crowd dynamics, social influence, peer effects \\ 
     Deferral to humans & human oversight, human intervention, human in the loop, human-AI collaboration \\ 
     Critiqability & contestability, scrutability, reviewability \\ 
-    Beneficence & beneficable, welfare, positive impact, well-being, prosocial \\ 
+    Beneficence & beneficable, welfare, positive impact, well-being, prosocial, altruistic, altruism, social good, ethical principle \\ 
     Non-maleficence & harm avoidance, ethical AI, AI safety, harm reduction \\ 
     Justice & equity, bias mitigation, equal treatment, social justice \\ 
     Respect for Persons & human dignity, respect for individuals, respect for rights, human rights \\ 
